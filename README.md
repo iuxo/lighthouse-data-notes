@@ -1,3 +1,4 @@
 # Jared's Notes
-# This is a H! header (largest)
-##### This is a H6 header (smallest)
+## Summary
+
+This repositiory contains all of the notes by [Jared](https://github.com/iuxo) for the [Lighthouse Labs](https://www.lighthouselabs.ca/) Data Science Bootcamp.
