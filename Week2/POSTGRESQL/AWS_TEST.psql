@@ -1,0 +1,17 @@
+-- TASK 1: Return product name and its quanity/unit
+
+-- SELECT productname, unitsinstock FROM products;
+
+-- TASK 2: Select all product names and their category ID
+
+-- SELECT products.productname, products.categoryid, categories.categoryname
+--     FROM products
+--     LEFT OUTER JOIN categories
+--     ON products.categoryid = categories.categoryid;
+
+-- TASK 3: Get firstname, lastname, and hiredate for employees that have
+--         been working at compnay longer than 5 years
+
+-- SELECT firstname, lastname, hiredate
+--     FROM employees
+--     WHERE hiredate < '2017-09-26';
