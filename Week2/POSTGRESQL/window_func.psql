@@ -1,0 +1,47 @@
+-- calculating the average price of all products in table_to_xml
+
+-- SELECT AVG (price) FROM products;
+
+-- apply aggregate function to subset of rows, 
+-- average price for every product group
+
+-- SELECT group_name, AVG(price)
+-- FROM products
+-- INNER JOIN product_groups USING (group_id)
+-- GROUP BY group_name;
+
+
+-- product name, price, product group name, with average prices of product group
+
+-- SELECT 
+--     product_name,
+--     price,
+--     group_name,
+--     AVG (price) OVER (PARTITION BY group_name)
+-- FROM products
+-- INNER JOIN product_groups USING (group_id);
+
+-- PSQL window function syntax
+-- window_function(arg1, arg2, ..) OVER (
+--  [PARTITION BY partition_expression]
+--  [ORDER BY sort_expression [ASC | DESC] [NULLS {FIRST | LAST}]]
+
+-- PARTITION BY divides rows into group or partitions to which 
+-- to apply window function (optional)
+
+-- frame_clause: can shorten query by
+
+/*
+SELECT
+    wf1() OVER(PARTITION BY c1 ORDER BY c2),
+    wf2() OVER(PARTITION BY c1 ORDER BY c2)
+FROM table_name;
+
+to
+
+SELECT 
+   wf1() OVER w,
+   wf2() OVER w,
+FROM table_name
+WINDOW w AS (PARTITION BY c1 ORDER BY c2);
+*/
