@@ -1,0 +1,9 @@
+[submodule "Week2/Pandas_exercise"]
+	path = Week2/Pandas_exercise
+	url = https://github.com/lighthouse-labs/Pandas_exercise.git
+[submodule "Week2/Other_data_types_exercise"]
+	path = Week2/Other_data_types_exercise
+	url = https://github.com/lighthouse-labs/Other_data_types_exercise.git
+[submodule "Week3/dataviz_exercises"]
+	path = Week3/dataviz_exercises
+	url = https://github.com/lighthouse-labs/dataviz_exercises.git
