@@ -7,3 +7,6 @@
 [submodule "Week3/dataviz_exercises"]
 	path = Week3/dataviz_exercises
 	url = https://github.com/lighthouse-labs/dataviz_exercises.git
+[submodule "Week3/unsupervised_learning_exercise"]
+	path = Week3/unsupervised_learning_exercise
+	url = https://github.com/lighthouse-labs/unsupervised_learning_exercise.git
